@@ -46,7 +46,7 @@
 	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account <b class="caret"></b></a>
 	                        <ul class="dropdown-menu animated fadeInUp">
 	                          <li><a href="">Profile</a></li>
-	                          <li><a href="">Logout</a></li>
+	                          <li><a href="logout.php">Logout</a></li>
 	                        </ul>
 	                      </li>
 	                    </ul>
@@ -74,7 +74,7 @@
                            </a>
                            <!-- Sub menu -->
                            <ul>
-                              <li><a href="index.php">Log Out</a></li>
+                              <li><a href="logout.php">Log Out</a></li>
                           </ul>
                       </li>
                   </ul>

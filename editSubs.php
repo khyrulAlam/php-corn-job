@@ -1,8 +1,16 @@
 <?php
-
 include 'App/init.php';
 $db = new Database();
 
+//Check Is Loging
+Session::init();
+$username = Session::get('username');
+if(empty($username)){
+  header('location:/');
+};
+
+
+//Database Query
 $id =  (int)$_GET['id'];
 $table = 'subscriber_list';
 

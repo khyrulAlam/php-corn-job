@@ -131,6 +131,30 @@ class Database{
     }
   }
 
+//set Inactive
+  public function setInactive($id){
+      $sql = "UPDATE subscriber_list SET status=0 WHERE s_id=$id";
+      $query = $this->pdo->prepare($sql);
+      $result = $query->execute();
+      return $result ? $query->rowCount() : false;
+  }
+
+//set Active
+  public function setActive($id){
+    $sql = "UPDATE subscriber_list SET status=1 WHERE s_id=$id";
+    $query = $this->pdo->prepare($sql);
+    $result = $query->execute();
+    return $result ? $query->rowCount() : false;
+  }
+
+  public function selectActiveUser(){
+    $query  = $this->pdo->prepare("SELECT * FROM subscriber_list WHERE status=1 ORDER BY s_id DESC");
+    $query->execute();
+    if($query->rowCount() > 0){
+       $value = $query->fetchAll(PDO::FETCH_ASSOC);
+     }
+    return !empty($value)? $value:false;
+  }
 
 
 }

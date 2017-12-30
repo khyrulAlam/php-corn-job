@@ -30,9 +30,9 @@
         <td class="center"><?= $row['fromDate']?></td>
         <td class="text-center">
           <?php if($row['status'] == 1){?>
-            <span class="label label-success">Active</span>
+            <a href="status.php?id=<?= $row['s_id']?>&status=inactive" title="Inactive"><span class="label label-success">Active</span></a>
           <?php }else{ ?>
-            <span class="label label-warning">Inactive</span>
+            <a href="status.php?id=<?= $row['s_id']?>&status=active" title="Active"><span class="label label-warning">Inactive</span></a>
           <?php }?>
         </td>
         <td class="text-center">

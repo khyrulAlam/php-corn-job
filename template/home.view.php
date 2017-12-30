@@ -12,7 +12,7 @@
     </div>
 
     <div class="panel-options">
-      <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+      <a href="/subsList.php" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
     </div>
   </div>
     <div class="panel-body">

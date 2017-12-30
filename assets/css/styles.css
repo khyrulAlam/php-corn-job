@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu');
 
+a:hover{
+  text-decoration: none;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Ubuntu', sans-serif;
